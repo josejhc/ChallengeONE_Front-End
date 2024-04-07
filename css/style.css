@@ -4,20 +4,21 @@ en las secciones señaladas */
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-}
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    width: 360px;
+    height: 4475px;
+ 
     font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     line-height: 1;
+}
+.tudo  {
+    padding: 0 20px;
+    background: #F5F5F5;
+
 }
 ol, ul,li {
     list-style: none;
@@ -42,21 +43,89 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
-
+width: 100%;
 }
+
+.menu__header{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    font-size: 16px;
+   
+}
+
+.nombre{
+    /* background-color: aqua; */
+    flex-wrap: nowrap;
+    gap: 16px;
+    display: flex;
+    font-weight: bold;    
+}
+
+
+
+
+
 
 /*Sección Title*/
 
 section.title{
-
+/* background-color: rebeccapurple; */
+display: flex;
 }
+
+.title__div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: blue; */
+}
+.title__div img{
+    width: 98px;
+}
+.title__bio{
+    /* font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 1rem; */
+    
+}
+.title__subsection{
+    font-size: 14px;
+    
+}
+.title__network{
+display: flex;
+width: 100%;
+gap: 12px;
+margin: 1rem 0;
+
+/* background-color: red; */
+}
+
+.title__network__item img{
+    width: 9px;
+}
+
+
 
 /*Sección About*/
 
 section.about{
-
+    background-color:#EAF2FD;
+    ;
 }
 
+.about__title{
+    /* font-size: 22px; */
+    margin: 1rem 0;
+}
+h3{
+    background-color: aqua;
+    font-weight: bold;
+    /* font-size: 22px; */
+    /* margin-bottom: 1rem; */
+}
 /*Sección Hobbies*/
 
 section.hobbies{
