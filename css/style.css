@@ -7,7 +7,7 @@ coloque nas sessões indicadas*/
 
 body {
     box-sizing: border-box;
-    width: auto;
+    width: 100%;
     height: 4475px;
     /* margin: 0px; */
     /* padding: 0px; */
@@ -18,6 +18,8 @@ body {
     background: #F5F5F5;
     font-family: Raleway;
     /* line-height:110%; */
+    width: 100%;
+    position: absolute;
 }
 
 ol, ul,li {
@@ -43,14 +45,15 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
-width: 90%;
-padding: 0 20px;
+width: 100%;
+padding: 0 0px;
 }
 
 .menu__header{
     display: flex;
     justify-content: space-between;
     height: 4rem;
+    padding: 0px 20px;
     align-items: center;
     font-size: 16px;
 }
@@ -76,6 +79,7 @@ section.title{
 
 .title__div{
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 20px;
 }
@@ -88,6 +92,11 @@ section.title{
     font-weight: bold;
     font-size: 22px;
     justify-content: center; 
+}
+.title__container h3{
+    font-weight: bold;
+    font-size: 22px;
+    justify-content: start; 
 }
 
 .about__container h3{
@@ -151,7 +160,7 @@ h3{
 /*Sección Skills*/
 
 section.skills{
-    z-index: 0;
+    /* z-index: 0; */
     width: auto;
     /* padding: 0 20px; */
     justify-content: center;
@@ -222,6 +231,7 @@ section.academic{
     height: auto;
     
     flex-grow: 1;
+    
 
 }
 .academic__courses__list{
@@ -319,7 +329,9 @@ width: 108px;
 
 
 /*Contacto*/
-
+.formcontato__img{
+    display: none;
+}
 section.formcontato{
     background-color:#EAF2FD;
   
@@ -416,8 +428,101 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-/* @media (min-width: 768px) {
+ @media (min-width: 768px) {
 
+    .academic__courses{
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+        gap: 10px;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    
+    .title__div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .title__container{
+        width: 70%;
+        align-content: center;
+        
+    }
+    .title__profile{
+        width: 98px;
+        flex-grow: 1;
+        align-self: center;
+    
+    }
+    
+        
+        .menu__header{
+            display: flex;
+            justify-content: space-between;
+            height: 4rem;
+            padding: 0px 40px;
+            align-items: center;
+            font-size: 16px;
+        }
+        section.menu{
+            width: 100%;
+            padding: 0 0px;
+            
+            } 
+        
+        section.title{
+            display: flex;
+            padding: 0 40px;
+        }
+        
+        section.skills{
+            padding: 0 40px;
+            justify-content: center;
+        }
+        section.hobbies{
+            padding: 0 40px;
+            justify-content: center;
+        }   
+        #sobre-mi{
+            padding: 0 40px;
+        
+      
+        }section.academic{
+            background-color: #EAF2FD;
+            padding: 0 40px;
+            left: 0%;
+            display: flex;
+            width: auto;
+            flex-direction: column;
+        }section.experience{
+  
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            padding: 0 40px;
+            
+        }section.formcontato{
+            background-color:#EAF2FD;
+          
+            padding: 0 40px;
+          
+            width: auto;
+        
+        }section.footer{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 102px;
+            background-color: white;
+            padding: 0 40px;
+        } 
+        .formcontato__img{
+            display: none;
+        }
+        
+    
 /* Menú */
 
 /*title*/
@@ -430,11 +535,188 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Experiencia Profesional*/
 
+ }
+
+/*Desk*/
+@media (min-width: 1400px) {
+    body {
+        box-sizing:border-box;
+        /* width: ; */
+        height: 4475px;
+        /* position: relative; */
+        /* background-color: red; */
+        /* margin: 0px; */
+        /* padding: 0px; */
+        /* line-height: 25px; */
+    }
+    .tudo{
+        width: 100%;
+        /* position: absolute; */
+    }
+    .title__div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+        /* background-color: red; */
+    }
+    
+    .title__container{
+        width: 70%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        /* background-color: aqua; */
+    }
+    .title__container h3{
+        font-size: 60px;
+        margin: 2rem 0;
+    }
+    .title__subsection{
+        font-size: 20px;
+        margin: 1rem 0;
+    }
+    .title__profile{
+        width: 98px;
+        flex-grow: 1;
+        align-self: center;
+    
+    }
+        
+        section.menu{
+            width: 100%;
+            padding: 0px 0;
+            /* background-color: rebeccapurple; */
+            } 
+            section.skills{
+                /* z-index: 0; */
+                /* width: auto; */
+                padding: 0 120px;
+                justify-content: center;
+            }  
+            section.hobbies{
+                /* z-index: 0; */
+                /* width: auto; */
+                padding: 0 120px;
+                justify-content: center;
+            }   
+        .menu__header{
+            display: flex;
+            justify-content: space-between;
+            height: 4rem;
+            padding: 0px 120px;
+            align-items: center;
+            font-size: 16px;
+                }
+                
+                .nombre{
+                    flex-wrap: nowrap;
+                    gap: 16px;
+                    display: flex;
+                    font-weight: bold;    
+                }    
 
 
-/*Mobile*/
-/* @media (min-width: 425px) { */
 
+
+        section.title{
+            display: flex;
+            padding: 0 120px;
+        }
+        
+       
+        #sobre-mi{
+            /* background-color:#EAF2FD; */
+            padding: 0 120px;
+        
+      
+        }section.academic{
+            background-color: #EAF2FD;
+            padding: 0 120px;
+            left: 0%;
+            display: flex;
+            width: auto;
+            flex-direction: column;
+        }section.experience{
+  
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            padding: 0 120px;
+            
+        }section.formcontato{
+            background-color:#EAF2FD;
+          
+            padding: 0 120px;
+          
+            width: auto;
+        
+        }section.footer{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 102px;
+            background-color: white;
+            padding: 0 120px;
+        } 
+    .academic__courses__item__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        margin: 1rem 0;
+        flex-grow: 1;
+    }
+   
+    
+    .experience__img{
+        width: 70%;
+    }
+    
+    .experience__info{
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .experiencie__box{
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        
+        
+        /* flex-wrap: nowrap; */
+    }
+    #professional-reverse-1, #professional-reverse-2{
+        flex-direction: row-reverse;
+    }
+    .formcontato__contacto{
+            /* background-color: #2A7AE4; */
+            background-color:#EAF2FD;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+            padding: 0 20px;
+          
+            width: auto;
+        
+        
+    }
+    .formcontato__img{
+        display: flex;
+        margin: 20px;
+    }
+}
+   
+   
 /*Menu*/
 
 /*Titulo*/
@@ -452,6 +734,4 @@ Utiliza las referencias de los breakpoints @media abajo */
  /*Contacto*/
 
 /*Footer*/
-
-
 
